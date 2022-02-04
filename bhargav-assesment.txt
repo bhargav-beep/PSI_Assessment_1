@@ -1,0 +1,152 @@
+Q1:
+Solution - 
+
+import java.util.Scanner;
+public class number {
+    public static void main(String[] args) {
+        
+    
+    Scanner obj = new Scanner(System.in);
+    System.out.println("Enter four numbers:");
+    int a = obj.nextInt(); 
+    int b = obj.nextInt();
+    int c = obj.nextInt();
+    int d = obj.nextInt();
+    if(a==b && b==c && c==d && d==a){
+        System.out.println("Numbers are equal!");
+    }
+    else{
+        System.out.println("Numbers are not eaqual!");
+    }
+
+}
+}
+
+Q2:
+Solution - 
+
+import java.util.Scanner;
+public class strictly {
+    public static void main(String[] args) {
+     Scanner o = new Scanner(System.in);
+     System.out.println("Enter two double numbers:");
+     double x = o.nextDouble();
+     double y = o.nextDouble();   
+     if(x>0 && x<1 || y>0 && y<1){
+         System.out.println("TRUE");
+     } 
+     else{
+         System.out.println("FALSE");
+     }
+    }
+    
+}
+
+Q3:
+Solution-
+
+import java.util.*;
+public class Question_three {
+    public static void main(String[] args) {
+        
+       boolean [][] arr = {{true,false,true}
+                           ,{false,true,false}};
+       for(int i=0;i<arr.length;i++){
+           for(int j=0;j<arr[i].length;j++){
+               if(arr[i][j]){
+                   System.out.print("t");
+               }
+               else{
+                   System.out.print("f");
+               }
+           }
+           System.out.println();
+       }
+
+    }
+    
+}
+
+Q4:
+Solution - 
+
+import java.util.Scanner;
+public class changearr {
+    public static void main(String[] args) {
+       Scanner obj = new Scanner(System.in);
+       int[][] original = new int[2][3];
+       for(int i=0;i<2;i++){
+           for(int j=0;j<3;j++){
+               original[i][j] = obj.nextInt();
+            } 
+        }
+        for(int j=0;j<3;j++){
+            for(int i=0;i<2;i++){
+                System.out.print(original[i][j]+" ");
+            }
+            System.out.println();
+        }
+     
+    
+}
+}
+
+Q5:
+Solution - 
+
+import java.util.Scanner;
+
+public class k  {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int temp;
+        System.out.println("Enter number of elements in the array:");
+        int n = obj.nextInt();
+        int[] arr = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=obj.nextInt();
+        }
+        for (int i = 0; i < arr.length; i++) {     
+            for (int j = i+1; j < arr.length; j++) {     
+               if(arr[i] < arr[j]) {    
+                   temp = arr[i];    
+                   arr[i] = arr[j];    
+                   arr[j] = temp;    
+               }     
+            }     
+        }    
+       System.out.println("Enter value of k:");
+        int k = obj.nextInt();
+       
+       
+        for(int j=0;j<k;j++){
+            System.out.println(arr[j]+" ");
+        }
+    }
+    
+}
+
+Q6:
+Solution - 
+
+import java.util.Scanner;
+public class binary {
+                    public int zeroes(int x){
+         int count=0;
+         String number = Integer.toBinaryString(n);
+         System.out.println("Binary representaion is :"+number);
+         for( char ch : number.toCharArray(){
+         count = count+ch =='0' ?1: 0;
+}
+         return count;
+}    
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:");
+        int a = sc.nextInt();
+        System.out.println("Zero bits are:"+zeroes(a));
+        
+        
+    }
+}
+
